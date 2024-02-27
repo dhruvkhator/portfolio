@@ -1,19 +1,26 @@
+import { useState } from "react"
 import styles from "./App.module.css"
-import { Proposal } from "./components/Proposal/Proposal"
-import { About } from "./components/About/About"
-import { Timeline } from "./components/Timeline/Timeline"
-import { Final } from "./components/Final/Final"
-import { Asking } from "./components/Asking/Asking"
+import { Pro } from "./components/Pro/Pro"
+import {Timeline} from "./components/Timeline/Timeline"
+
 
 
 function App() {
+   const [toggle, setToggle] = useState(true)
  return (
+   
   <div className={styles.App}>
-     <Proposal />
-     <About />
-     <Timeline />
-     <Final />
-     <Asking />
+   {/* <div>
+      <button
+         onClick={() => setToggle(!toggle)}
+         class="btn btn-primary mb-5"
+      >Click</button>
+   </div>
+   {toggle &&(
+      <Pro />
+   )} */}
+   <Pro />
+     {/* <Timeline /> */}
     </div>
  )
 

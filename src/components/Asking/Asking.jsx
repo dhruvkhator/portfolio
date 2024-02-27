@@ -9,6 +9,9 @@ export const Asking = () => {
         <p className={styles.description}>
           Would you like to be my GirlFriend?? ;)
         </p>
+        <br></br>
+        <br></br>
+        <p className={styles.description}>You said YES, you can't escape now little mouse xoxo.</p>
       </div>
       </section>
   )
